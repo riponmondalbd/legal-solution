@@ -17,6 +17,9 @@
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/5ce96db8a2.js" crossorigin="anonymous"></script>
+
     <style>
         .eb-garamond-font {
             font-family: "EB Garamond", serif;
@@ -34,6 +37,7 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'common-color': '#B68C5A',
                     }
                 }
             }
@@ -42,7 +46,46 @@
 </head>
 
 <body>
-
+    <header class="container mx-auto">
+        <!-- logo & navigation -->
+        <div class="navbar bg-base-100 py-12">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                    </ul>
+                </div>
+                <img class="btn btn-ghost" src="images/logo2.png" alt="logo">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                    <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="text-lg font-semibold px-2 md:px-3 py-3 md:py-5 bg-common-color text-white rounded-lg">Free
+                    Consultation</a>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
 
 </html>
